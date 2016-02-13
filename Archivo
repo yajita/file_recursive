@@ -1,0 +1,56 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package listararchivos;
+
+/**
+ *
+ * @author yajaira
+ */
+public class Archivo {
+    private String tipo;
+    private long tamano;
+    private String path;
+    private String nombre;
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public long getTamano() {
+        return tamano;
+    }
+
+    public void setTamano(long tamano) {
+        this.tamano = tamano;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    @Override
+    public String toString(){
+        return  "\n"+tipo + "\t\t" + tamano + "\t\t\t" + path;
+    }
+    
+    
+}
